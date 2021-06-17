@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="bocuk.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемориал Боцика</title>
+
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="ЭТОТ БОЦИК БЫЛ ИЗ ТЕХ КТО ПРСОТО ЛЮБИТ ЖИТЬ_Trim.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1>Покойся с миром Боцик....</h1>
+        <p>
+            Ребят, но давайте без шуток. Боцыка реально убили и его уже не вернуть...помянем резвого коня, у него были
+            свои мечты и
+            планы на жизнь. Боцык мечтал, Боцык любил и хотел семью. Бегать по лугу с маленьким жеребёнком, любить свою
+            кобылу НО ОН
+            УМЕР. Боцыка убил продюсер Иванов. Запомните, этот человек рушит судьбы и мечты. Боцык больше не приласкает
+            свою кобылу
+            и не будет резвиться на зелёном лугу. Боцык не сможет любить, Боцык не сможет жить.... -Где Боцык? -Боцыка
+            больше нет.
+            Его продюсер убил, из ревности. Боцык, покойся с миром, мы тебя не забудем...
+        </p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+</body>
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Остановить боцика";
+        } else {
+            video.pause();
+            btn.innerHTML = "Прыгай дальше верный конь...";
+        }
+    }
+</script>
+
+</html>
